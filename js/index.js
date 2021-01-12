@@ -118,3 +118,11 @@ mainP[7].textContent = "sales@greatidea.io"
 //footer
 
 mainP[8].textContent = "Copyright Great Idea! 2018"
+
+const blogLink = document.createElement("a");
+blogLink.textContent = "Blog";
+blogLink.href = "#";
+console.log("Bloglink: ", blogLink);
+document.querySelector("nav").appendChild(blogLink);
+
+blogLink.style.color = "green";
