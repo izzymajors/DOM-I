@@ -79,8 +79,12 @@ let ctaImage = document.getElementById("cta-img")
 ctaImage.setAttribute('src',siteContent["cta"]["img-src"])
 
 //section 2
+
  const mainH4 = document.querySelectorAll('h4')
   mainH4[0].textContent = siteContent["main-content"]["features-h4"]
+  //const mainP = document.querySelector('p')
+
+
 mainH4[1].textContent = siteContent["main-content"]["about-h4"]
 
 let middleImage = document.getElementById("middle-img")
@@ -89,3 +93,8 @@ middleImage.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 mainH4[2].textContent = siteContent["main-content"]["services-h4"]
 mainH4[3].textContent = siteContent["main-content"]["product-h4"]
 mainH4[4].textContent = siteContent["main-content"]["vision-h4"]
+
+const mainP = document.querySelector('p')
+
+mainP.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
