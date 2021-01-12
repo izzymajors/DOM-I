@@ -43,21 +43,49 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const header = document.querySelector("header")
 const nav = document.querySelector("nav")
-const cta = document.querySelector("cta")
+nav.style 
+ const cta = document.querySelector("cta")
 const mainContent = document.querySelector("main-content")
 const contact = document.querySelector ("contact")
-const footer = document.querySelector ("footer")
+ const footer = document.querySelector ("footer")
+
+// nav
+
+const navItem1 = document.querySelector('nav a');
+const navItem2 = navItem1.nextSibling;
+const navItem3 = navItem2.nextSibling;
+const navItem4 = navItem3.nextSibling;
+const navItem5 = navItem4.nextSibling;
+const navItem6 = navItem5.nextSibling;
+navItem1.textContent = "Servivces";
+navItem2.textContent = "Product";
+navItem3.textContent = "Vision";
+navItem4.textContent = "Features";
+navItem5.textContent = "About";
+navItem6.textContent = "Contact";
+
 
 
 
 
 // top section
-const firstSection = document.querySelector('.cta-text');
+const firstSection = document.querySelector('.cta-text'); 
 const largeText = firstSection.querySelector('h1');
 const firstButton = firstSection.querySelector('button');
 largeText.textContent = "DOM IS AWESOME";
 firstButton.textContent = 'Get Started';
 
+let ctaImage = document.getElementById("cta-img")
+ctaImage.setAttribute('src',siteContent["cta"]["img-src"])
+
 //section 2
  const mainH4 = document.querySelectorAll('h4')
- mainH4[0].textContent = siteContent["main-content"]["features-h4"]
+  mainH4[0].textContent = siteContent["main-content"]["features-h4"]
+mainH4[1].textContent = siteContent["main-content"]["about-h4"]
+
+let middleImage = document.getElementById("middle-img")
+middleImage.setAttribute('src',siteContent["main-content"]["middle-img-src"])
+
+mainH4[2].textContent = siteContent["main-content"]["services-h4"]
+mainH4[3].textContent = siteContent["main-content"]["product-h4"]
+mainH4[4].textContent = siteContent["main-content"]["vision-h4"]
