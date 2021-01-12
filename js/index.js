@@ -51,20 +51,17 @@ const contact = document.querySelector ("contact")
 
 // nav
 
-const navItem1 = document.querySelector('nav a');
-const navItem2 = navItem1.nextSibling;
-const navItem3 = navItem2.nextSibling;
-const navItem4 = navItem3.nextSibling;
-const navItem5 = navItem4.nextSibling;
-const navItem6 = navItem5.nextSibling;
-navItem1.textContent = "Servivces";
-navItem2.textContent = "Product";
-navItem3.textContent = "Vision";
-navItem4.textContent = "Features";
-navItem5.textContent = "About";
-navItem6.textContent = "Contact";
+const navItem = document.querySelectorAll('nav a');
+navItem[0].textContent = "services"
 
+navItem[1].textContent = "Product";
+navItem[2].textContent = "Vision";
+navItem[3].textContent = "Features";
+navItem[4].textContent = "About";
+navItem[5].textContent = "Contact";
 
+//nav styles
+navItem.forEach( link => link.style.color = "green" );
 
 
 
@@ -105,3 +102,19 @@ mainP[2].textContent = "Services content elementum magna eros, ac posuere elvit 
 mainP[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 mainP[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+//bottom section
+
+//const contactInfo = document.querySelector("contact")
+//contactInfo.textContent = siteContent["contact"]["contact-h4"]
+mainH4[5].textContent = siteContent["contact"]["contact-h4"]
+
+mainP[5].textContent = "123 Way 456 Street Somewhere, USA"
+
+mainP[6].textContent = "1 (888) 888-8888"
+
+mainP[7].textContent = "sales@greatidea.io"
+
+//footer
+
+mainP[8].textContent = "Copyright Great Idea! 2018"
